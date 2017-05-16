@@ -207,7 +207,7 @@ class NotifyOnNewDiscussionPlugin extends Gdn_Plugin {
         $email->message($body);
         try {
             // decho($email->send());
-            $email->send()
+            $email->send();
         } catch (Exception $ex) {
             decho($ex);
         }
